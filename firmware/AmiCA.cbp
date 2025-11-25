@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AmiCA" />
+		<Option compiler="sdcc" />
+		<Option extended_obj_names="1" />
+		<Build>
+			<Target title="Release">
+				<Option output="build/Release/AmiCA.hex" prefix_auto="1" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="build/Release/obj" />
+				<Option type="5" />
+				<Option compiler="sdcc" />
+				<Option projectLinkerOptionsRelation="-1" />
+				<Option projectIncludeDirsRelation="-1" />
+				<Option projectLibDirsRelation="-1" />
+				<Compiler>
+					<Add option="-mstm8" />
+					<Add option="--std-sdcc11" />
+					<Add option="--opt-code-speed" />
+				</Compiler>
+			</Target>
+			<Environment>
+				<Variable name="STM8_DEVICE" value="STM8S003F3" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-mstm8" />
+			<Add option="--out-fmt-ihx" />
+			<Add option="--std-sdcc11" />
+			<Add option="--noinduction" />
+			<Add option="--opt-code-speed" />
+			<Add option="--stack-auto" />
+		</Compiler>
+		<Unit filename="husb238.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="husb238.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="stm8s.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
